@@ -1,0 +1,33 @@
+crops/palu_calib: 803 samples
+  clean_s0: exit3 acc = 0.421
+  fog_s0: exit3 acc = 0.421
+  fog_s1: exit3 acc = 0.452
+  fog_s2: exit3 acc = 0.501
+  fog_s3: exit3 acc = 0.507
+  fog_s4: exit3 acc = 0.543
+  fog_s5: exit3 acc = 0.641
+  smoke_s0: exit3 acc = 0.421
+  smoke_s1: exit3 acc = 0.412
+  smoke_s2: exit3 acc = 0.426
+  smoke_s3: exit3 acc = 0.405
+  smoke_s4: exit3 acc = 0.412
+  smoke_s5: exit3 acc = 0.420
+  low_light_s0: exit3 acc = 0.421
+  low_light_s1: exit3 acc = 0.451
+  low_light_s2: exit3 acc = 0.482
+  low_light_s3: exit3 acc = 0.387
+  low_light_s4: exit3 acc = 0.394
+  low_light_s5: exit3 acc = 0.498
+  motion_blur_s0: exit3 acc = 0.421
+  motion_blur_s1: exit3 acc = 0.411
+  motion_blur_s2: exit3 acc = 0.381
+  motion_blur_s3: exit3 acc = 0.380
+  motion_blur_s4: exit3 acc = 0.422
+  motion_blur_s5: exit3 acc = 0.488
+  tile_loss_s0: exit3 acc = 0.421
+  tile_loss_s1: exit3 acc = 0.431
+  tile_loss_s2: exit3 acc = 0.478
+  tile_loss_s3: exit3 acc = 0.513
+  tile_loss_s4: exit3 acc = 0.498
+  tile_loss_s5: exit3 acc = 0.509
+saved -> eval_nonpalu_on_palucalib.npz

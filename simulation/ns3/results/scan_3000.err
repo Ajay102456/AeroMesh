@@ -1,0 +1,16 @@
+msg="Invalid WifiPhy state RX", +4.786233397s 23 file=./src/wifi/model/wifi-phy-state-helper.cc, line=368
+NS_FATAL, terminating
+   0# ns3::WifiPhyStateHelper::SwitchToRx(ns3::Time) at :0
+   1# ns3::PhyEntity::StartReceivePayload(ns3::Ptr<ns3::Event>) at :0
+   2# ns3::PhyEntity::StartReceiveField(ns3::WifiPpduField, ns3::Ptr<ns3::Event>) at :0
+   3# ns3::PhyEntity::EndReceiveField(ns3::WifiPpduField, ns3::Ptr<ns3::Event>) at :0
+   4# std::_Function_handler<void (), std::_Bind<void (ns3::PhyEntity::*(ns3::PhyEntity*, ns3::WifiPpduField, ns3::Ptr<ns3::Event>))(ns3::WifiPpduField, ns3::Ptr<ns3::Event>)> >::_M_invoke(std::_Any_data const&) at :0
+   5# ns3::DefaultSimulatorImpl::ProcessOneEvent() at :0
+   6# ns3::DefaultSimulatorImpl::Run() at :0
+   7# main at :0
+   8# __libc_start_call_main at ../sysdeps/nptl/libc_start_call_main.h:59
+   9# __libc_start_main_impl at ../csu/libc-start.c:360
+  10# _start at :0
+  11# 
+
+terminate called without an active exception

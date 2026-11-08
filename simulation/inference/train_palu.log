@@ -1,0 +1,12 @@
+train samples: 3558  val samples: 803
+train class counts: Counter({3: 1499, 0: 1498, 2: 561})
+class weights: tensor([5.9379e-01, 8.8950e+02, 1.5856e+00, 5.9340e-01])
+epoch 1/6 loss=1.7527 val_acc(exit1,2,3)=[0.5902864259028643, 0.7957658779576587, 0.7995018679950187] elapsed=232s
+  saved checkpoint to model_palu.pt (val_acc exit3 = 0.7995)
+epoch 2/6 loss=1.3584 val_acc(exit1,2,3)=[0.6687422166874222, 0.763387297633873, 0.7534246575342466] elapsed=467s
+epoch 3/6 loss=1.2333 val_acc(exit1,2,3)=[0.7048567870485679, 0.7770859277708593, 0.8580323785803238] elapsed=711s
+  saved checkpoint to model_palu.pt (val_acc exit3 = 0.8580)
+epoch 4/6 loss=1.1181 val_acc(exit1,2,3)=[0.7783312577833126, 0.7820672478206725, 0.8057285180572852] elapsed=957s
+epoch 5/6 loss=1.0464 val_acc(exit1,2,3)=[0.7608966376089664, 0.7895392278953923, 0.7409713574097135] elapsed=1196s
+epoch 6/6 loss=1.0322 val_acc(exit1,2,3)=[0.7833125778331258, 0.813200498132005, 0.8206724782067247] elapsed=1426s
+Done. Best final-exit val accuracy: 0.8580

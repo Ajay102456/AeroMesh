@@ -1,0 +1,23 @@
+graph TD
+subgraph Ground
+RESP[Responder teams<br/>priority 0] --> GS1[Gateway /<br/>incident command]
+MED[Field medical post<br/>priority 1] --> GS2[Portable gateway]
+CIV[Community hotspots<br/>priority 2] --> GS2
+SAT[Satellite backhaul<br/>opportunistic] --> GS1
+end
+subgraph Aerial mesh
+RU1[Relay UAV 1<br/>backbone] <--> RU2[Relay UAV 2<br/>backbone]
+RU2 <--> RU3[Relay UAV 3]
+IU1[Inference UAV 1<br/>early-exit DNN + UQ]
+IU2[Inference UAV 2<br/>large model, deferral target]
+IU3[Inference UAV 3<br/>sensing + light model]
+GC[Ground control station<br/>GCS: mission goals, class policy]
+end
+GS1 <--> RU1
+GS2 <--> RU3
+GC -. policy/bids only .-> RU1
+RESP -. degraded imagery .-> IU1
+MED -. telemetry .-> RU3
+CIV -. low-rate traffic .-> RU3
+IU1 -- uncertain tiles: defer over mesh --> IU2
+IU3 -- features/tiles --> IU2

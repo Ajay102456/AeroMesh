@@ -1,0 +1,303 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>AeroMesh Architecture</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --panel: #111b2e;
+    --panel-border: #24344f;
+    --ink: #e8edf5;
+    --ink-dim: #9fb0c9;
+    --accent: #ff8a3d;
+    --accent-dim: #c96a2d;
+    --mesh: #4fd1c5;
+    --ground: #6f8bb3;
+    color-scheme: dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f4f6fb;
+      --panel: #ffffff;
+      --panel-border: #d9e0ec;
+      --ink: #14203a;
+      --ink-dim: #57668a;
+      --accent: #d9631a;
+      --accent-dim: #b8551a;
+      --mesh: #0e8f80;
+      --ground: #40567f;
+      color-scheme: light;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f6fb;
+    --panel: #ffffff;
+    --panel-border: #d9e0ec;
+    --ink: #14203a;
+    --ink-dim: #57668a;
+    --accent: #d9631a;
+    --accent-dim: #b8551a;
+    --mesh: #0e8f80;
+    --ground: #40567f;
+    color-scheme: light;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b1220;
+    --panel: #111b2e;
+    --panel-border: #24344f;
+    --ink: #e8edf5;
+    --ink-dim: #9fb0c9;
+    --accent: #ff8a3d;
+    --accent-dim: #c96a2d;
+    --mesh: #4fd1c5;
+    --ground: #6f8bb3;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    padding-inline: 20px;
+    padding-block: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid var(--panel-border);
+    padding-bottom: 18px;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: clamp(22px, 4vw, 30px);
+    line-height: 1.25;
+    margin: 0;
+    text-wrap: balance;
+    max-width: 46ch;
+  }
+
+  .sub {
+    color: var(--ink-dim);
+    font-size: 14.5px;
+    line-height: 1.5;
+    max-width: 62ch;
+  }
+
+  .diagram-panel {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    padding: 18px;
+    overflow-x: auto;
+  }
+
+  .diagram-panel pre.mermaid {
+    margin: 0;
+    min-width: 640px;
+  }
+
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+
+  .legend-card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .legend-card .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .legend-card h3 {
+    margin: 0;
+    font-size: 13.5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+
+  .legend-card p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+    padding-left: 18px;
+  }
+
+  footer {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 11.5px;
+    color: var(--ink-dim);
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: 480px) {
+    body { padding-inline: 16px; }
+  }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<header>
+  <span class="eyebrow">System Architecture</span>
+  <h1>AeroMesh: A Self-Healing Aerial Edge Mesh for Post-Disaster Connectivity and On-Board Damage Assessment</h1>
+  <p class="sub">Ground responders, a relay backbone of UAVs, and on-board inference nodes that defer uncertain tiles to a larger model over the mesh — coordinated by policy from a ground control station rather than direct command.</p>
+</header>
+
+<div class="diagram-panel">
+<pre class="mermaid">
+graph TD
+subgraph Ground
+RESP[Responder teams<br/>priority 0] --> GS1[Gateway /<br/>incident command]
+MED[Field medical post<br/>priority 1] --> GS2[Portable gateway]
+CIV[Community hotspots<br/>priority 2] --> GS2
+SAT[Satellite backhaul<br/>opportunistic] --> GS1
+end
+subgraph Aerial mesh
+RU1[Relay UAV 1<br/>backbone] <--> RU2[Relay UAV 2<br/>backbone]
+RU2 <--> RU3[Relay UAV 3]
+IU1[Inference UAV 1<br/>early-exit DNN + UQ]
+IU2[Inference UAV 2<br/>large model, deferral target]
+IU3[Inference UAV 3<br/>sensing + light model]
+GC[Ground control station<br/>GCS: mission goals, class policy]
+end
+GS1 <--> RU1
+GS2 <--> RU3
+GC -. policy/bids only .-> RU1
+RESP -. degraded imagery .-> IU1
+MED -. telemetry .-> RU3
+CIV -. low-rate traffic .-> RU3
+IU1 -- uncertain tiles: defer over mesh --> IU2
+IU3 -- features/tiles --> IU2
+</pre>
+</div>
+
+<div class="legend">
+  <div class="legend-card">
+    <h3><span class="dot" style="background: var(--ground)"></span>Ground layer</h3>
+    <p>Responder teams, a field medical post, and community hotspots feed traffic into two gateways by priority (0 = highest). A satellite link provides opportunistic backhaul at the incident-command gateway.</p>
+  </div>
+  <div class="legend-card">
+    <h3><span class="dot" style="background: var(--mesh)"></span>Relay backbone</h3>
+    <p>Three relay UAVs form the self-healing mesh backbone, bridging each ground gateway into the aerial layer so no single link failure isolates a ground node.</p>
+  </div>
+  <div class="legend-card">
+    <h3><span class="dot" style="background: var(--accent)"></span>Inference layer</h3>
+    <p>Inference UAV 1 runs an early-exit DNN with uncertainty quantification on degraded imagery; uncertain tiles are deferred over the mesh to Inference UAV 2's larger model, which also ingests features from Inference UAV 3's sensing pass.</p>
+  </div>
+  <div class="legend-card">
+    <h3><span class="dot" style="background: var(--ink-dim)"></span>Control plane</h3>
+    <p>The ground control station sets mission goals and classification policy only — it issues policy and bids, not direct routing commands, keeping the mesh's healing behavior local and autonomous.</p>
+  </div>
+</div>
+
+<footer>NODE PRIORITY 0–2 · DASHED = OUT-OF-BAND / LOW-RATE · SOLID = DATA OR CONTROL LINK</footer>
+
+<!--claude-mermaid-runtime-begin:3477-->
+<style>.mermaid-diagram{margin-block:4px}.mermaid-diagram svg{display:block;margin:0 auto;max-width:100%;height:auto}</style>
+<script src="/_runtime/mermaid-11.16.1.min.js"></script>
+<script>(function(){
+var CFG={"palettes":{"light":{"surface":"#f4efe4","text":"#42392e","line":"#8a7f6d","border":"#7a6c52","bg":"#fffdf8"},"dark":{"surface":"#262b34","text":"#f2f3f5","line":"#a8adb8","border":"#9aa4b8","bg":"#1f232b"}}};
+if(typeof mermaid==='undefined')return;
+var pres=Array.prototype.slice.call(document.querySelectorAll('pre.mermaid')).filter(function(p){if(p.hasAttribute('data-claude-mermaid-claimed'))return false;p.setAttribute('data-claude-mermaid-claimed','1');return true;});
+if(!pres.length)return;
+var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
+var root=document.documentElement;
+var items=pres.map(function(pre){
+var mount=document.createElement('div');mount.className='mermaid-diagram';
+return {pre:pre,mount:mount,src:pre.textContent||''};
+});
+var seq=0;
+var renderGen=0;
+var lastKey='';
+function pageBg(fallback){
+var els=[document.body,document.documentElement];
+for(var i=0;i<els.length;i++){
+var c=els[i]&&getComputedStyle(els[i]).backgroundColor;
+if(c&&c!=='transparent'&&c!=='rgba(0, 0, 0, 0)')return c;
+}
+return fallback;
+}
+function render(){
+var theme=root.getAttribute('data-theme');
+var dark=theme==='dark'||(!!(mq&&mq.matches)&&theme!=='light');
+var pal=dark?CFG.palettes.dark:CFG.palettes.light;
+var bg=pageBg(pal.bg);
+var key=(dark?'d':'l')+'|'+bg;
+if(key===lastKey)return;
+lastKey=key;
+var gen=++renderGen;
+var font=getComputedStyle(document.body).fontFamily||'sans-serif';
+var nat={useMaxWidth:false};
+mermaid.initialize({
+startOnLoad:false,securityLevel:'strict',theme:'base',
+flowchart:nat,sequence:nat,er:nat,state:nat,class:nat,pie:nat,
+gantt:nat,journey:nat,timeline:nat,gitGraph:nat,mindmap:nat,xyChart:nat,
+quadrantChart:nat,sankey:nat,c4:nat,requirement:nat,block:nat,
+packet:nat,kanban:nat,architecture:nat,radar:nat,
+themeVariables:{background:bg,mainBkg:pal.surface,primaryColor:pal.surface,
+primaryTextColor:pal.text,lineColor:pal.line,primaryBorderColor:pal.border,
+nodeBorder:pal.border,clusterBorder:pal.border,edgeLabelBackground:bg,
+clusterBkg:'rgba(127,127,127,0.07)',titleColor:pal.text,
+darkMode:dark,rowOdd:bg,rowEven:'rgba(127,127,127,0.07)',
+attributeBackgroundColorOdd:bg,attributeBackgroundColorEven:'rgba(127,127,127,0.07)',
+fontSize:'16px',fontFamily:font},
+themeCSS:'.node rect, .node circle, .node polygon, .node path, .cluster rect { stroke-width: 2px; }'
+});
+items.forEach(function(it){
+var id='claude-mermaid-'+seq++;
+mermaid.render(id,it.src).then(function(r){
+if(gen!==renderGen)return;
+var prev=it.pre.previousElementSibling;
+if(prev&&prev.className==='mermaid-diagram'&&prev!==it.mount)return;
+it.mount.innerHTML=r.svg;
+if(!it.mount.parentNode)it.pre.parentNode.insertBefore(it.mount,it.pre);
+it.pre.style.display='none';
+},function(){
+var scratch=document.getElementById(id);
+if(scratch)scratch.parentNode.removeChild(scratch);
+scratch=document.getElementById('d'+id);
+if(scratch)scratch.parentNode.removeChild(scratch);
+if(gen!==renderGen)return;
+if(it.mount.parentNode)it.mount.parentNode.removeChild(it.mount);
+it.pre.style.display='';
+});
+});
+}
+render();
+if(mq&&mq.addEventListener)mq.addEventListener('change',render);
+if(typeof MutationObserver!=='undefined')new MutationObserver(render).observe(root,{attributes:true,attributeFilter:['data-theme']});
+})();</script>
+<!--claude-mermaid-runtime-end-->
+
+</body></html>

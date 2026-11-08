@@ -1,0 +1,31 @@
+digraph Scenarios {
+  rankdir=LR;
+  fontname="Helvetica";
+  node [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", color="#2c3e50"];
+  edge [fontname="Helvetica", fontsize=9, color="#2c3e50", style=invis];
+
+  subgraph cluster_ph {
+    label="Philippines: urban typhoon corridor";
+    style=dashed; color="#888888"; fontsize=12;
+    PH1 [label="Typhoon Odette (2021)\nfiber-cut outage pattern", fillcolor="#fde2e2"];
+    PH2 [label="CAAP Part 11\nno-fly over active emergency", fillcolor="#fde2e2"];
+  }
+
+  subgraph cluster_id {
+    label="Indonesia: archipelagic earthquake/tsunami";
+    style=dashed; color="#888888"; fontsize=12;
+    ID1 [label="Palu / Sulawesi (2018)\nliquefaction, slow ground access", fillcolor="#e2f0fd"];
+    ID2 [label="DGCA approval process\narchipelagic gateway geography", fillcolor="#e2f0fd"];
+  }
+
+  subgraph cluster_vn {
+    label="Vietnam: Mekong monsoon flood";
+    style=dashed; color="#888888"; fontsize=12;
+    VN1 [label="Typhoon Yagi (2024)\nmulti-route fiber severance", fillcolor="#e2fde7"];
+    VN2 [label="gradual-onset flooding\nslow infrastructure loss", fillcolor="#e2fde7"];
+  }
+
+  PH1 -> PH2;
+  ID1 -> ID2;
+  VN1 -> VN2;
+}

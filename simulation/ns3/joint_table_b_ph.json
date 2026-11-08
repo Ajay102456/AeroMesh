@@ -1,0 +1,12 @@
+{
+ "scenario": "ph",
+ "ablation": "fixed_roles",
+ "n_pairs": 9,
+ "mean_diff": -0.0644259603332424,
+ "ci_lo": -0.10284814443382868,
+ "ci_hi": -0.027122562927339094,
+ "wilcoxon_p": 0.03125,
+ "cliffs_delta": -0.5925925925925926,
+ "full_mean": 0.990781401547619,
+ "fixed_roles_mean": 1.0552073618808615
+}

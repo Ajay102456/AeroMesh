@@ -1,0 +1,33 @@
+crops/palu_test: 2407 samples
+  clean_s0: exit3 acc = 0.837
+  fog_s0: exit3 acc = 0.837
+  fog_s1: exit3 acc = 0.842
+  fog_s2: exit3 acc = 0.788
+  fog_s3: exit3 acc = 0.673
+  fog_s4: exit3 acc = 0.531
+  fog_s5: exit3 acc = 0.492
+  smoke_s0: exit3 acc = 0.837
+  smoke_s1: exit3 acc = 0.840
+  smoke_s2: exit3 acc = 0.841
+  smoke_s3: exit3 acc = 0.845
+  smoke_s4: exit3 acc = 0.844
+  smoke_s5: exit3 acc = 0.846
+  low_light_s0: exit3 acc = 0.837
+  low_light_s1: exit3 acc = 0.815
+  low_light_s2: exit3 acc = 0.749
+  low_light_s3: exit3 acc = 0.588
+  low_light_s4: exit3 acc = 0.509
+  low_light_s5: exit3 acc = 0.498
+  motion_blur_s0: exit3 acc = 0.837
+  motion_blur_s1: exit3 acc = 0.841
+  motion_blur_s2: exit3 acc = 0.846
+  motion_blur_s3: exit3 acc = 0.846
+  motion_blur_s4: exit3 acc = 0.833
+  motion_blur_s5: exit3 acc = 0.815
+  tile_loss_s0: exit3 acc = 0.837
+  tile_loss_s1: exit3 acc = 0.836
+  tile_loss_s2: exit3 acc = 0.793
+  tile_loss_s3: exit3 acc = 0.735
+  tile_loss_s4: exit3 acc = 0.589
+  tile_loss_s5: exit3 acc = 0.651
+saved -> eval_palu_on_palutest.npz

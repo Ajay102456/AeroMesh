@@ -1,0 +1,6 @@
+venv/
+Data/
+datasets/
+__pycache__/
+*.pyc
+.directory

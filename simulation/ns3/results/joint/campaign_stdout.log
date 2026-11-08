@@ -1,0 +1,29 @@
+[1/27] full_ph_f0_s1 ok=True attempts=1 elapsed=60s
+[2/27] full_ph_f0_s2 ok=True attempts=1 elapsed=129s
+[3/27] full_ph_f0_s3 ok=True attempts=1 elapsed=200s
+[4/27] full_ph_f1_s1 ok=True attempts=1 elapsed=261s
+[5/27] full_ph_f1_s2 ok=True attempts=1 elapsed=328s
+[6/27] full_ph_f1_s3 ok=True attempts=1 elapsed=392s
+[7/27] full_ph_f2_s1 ok=True attempts=1 elapsed=454s
+[8/27] full_ph_f2_s2 ok=True attempts=1 elapsed=528s
+[9/27] full_ph_f2_s3 ok=True attempts=1 elapsed=590s
+[10/27] no_self_healing_ph_f0_s1 ok=True attempts=1 elapsed=656s
+[11/27] no_self_healing_ph_f0_s2 ok=True attempts=1 elapsed=731s
+[12/27] no_self_healing_ph_f0_s3 ok=True attempts=1 elapsed=807s
+[13/27] no_self_healing_ph_f1_s1 ok=True attempts=1 elapsed=872s
+[14/27] no_self_healing_ph_f1_s2 ok=True attempts=1 elapsed=937s
+[15/27] no_self_healing_ph_f1_s3 ok=True attempts=1 elapsed=1005s
+[16/27] no_self_healing_ph_f2_s1 ok=True attempts=1 elapsed=1069s
+[17/27] no_self_healing_ph_f2_s2 ok=True attempts=1 elapsed=1136s
+[18/27] no_self_healing_ph_f2_s3 ok=True attempts=1 elapsed=1196s
+[19/27] fixed_roles_ph_f0_s1 ok=True attempts=1 elapsed=1254s
+[20/27] fixed_roles_ph_f0_s2 ok=True attempts=1 elapsed=1329s
+[21/27] fixed_roles_ph_f0_s3 ok=True attempts=1 elapsed=1412s
+[22/27] fixed_roles_ph_f1_s1 ok=True attempts=1 elapsed=1475s
+[23/27] fixed_roles_ph_f1_s2 ok=True attempts=1 elapsed=1556s
+[24/27] fixed_roles_ph_f1_s3 ok=True attempts=1 elapsed=1626s
+[25/27] fixed_roles_ph_f2_s1 ok=True attempts=1 elapsed=1689s
+[26/27] fixed_roles_ph_f2_s2 ok=True attempts=1 elapsed=1763s
+[27/27] fixed_roles_ph_f2_s3 ok=True attempts=1 elapsed=1825s
+
+Done. 27/27 cells completed. 0 cells needed at least one retry. 0 cells never completed after 3 attempts.

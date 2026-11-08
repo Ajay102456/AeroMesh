@@ -1,0 +1,1116 @@
+
+● Everything rendered correctly. Here's where things stand:
+
+  Author info integrated: Subarmaniam Kannan and Sumendra Yogarayan (Multimedia
+  University, FIST + CICC), correspondence set, funding set to "no external
+  funding," conflicts-of-interest already said "no conflicts." Both
+  main.tex/main_blind.tex compile cleanly, blinding sync verified (15 diff lines
+  = exactly the 7 legitimate substitutions).
+
+  Abstract shortened: 513 → 256 words, close to MDPI's ~200-word guideline
+  (confirmed this is the standard MDPI convention), while keeping all real
+  numbers and the honest-reporting framing.
+
+  Joint co-simulator built: I attempted to extend ns-3 itself for genuine
+  time-resolved Φ(t), but hit a real, reproducibility-breaking flakiness in the
+  upstream WifiPhy crash (even the untouched, previously-validated binary
+  stopped reproducing seeds that had succeeded in the original campaign) —
+  reverted those source edits to keep the validated campaign data untouched. Per
+  your direction, I built a Python co-simulator instead that:
+  - Implements the actual auction/deferral control logic (Algorithm 2) and all
+    six ablations
+  - Draws every stochastic value by bootstrap resampling from the real per-seed
+    ns-3 campaign data and the real per-severity inference accuracy curves —
+    nothing invented
+  - Uses a declared (not fabricated) epoch-to-severity recovery schedule, stated
+    explicitly as a modeling choice
+  - Produced real Figure A (Φ(t) trajectories), Figure B (Pareto frontier),
+    Table A (time-to-restore), Table B (six-ablation
+    bootstrap/Wilcoxon/Holm-Bonferroni comparison)
+
+  Honest finding surfaced: four of six ablations behave as the design predicts,
+  but the fixed-roles and oracle-controller ablations actually score above full
+  AeroMesh in this reduced-fidelity model — reported plainly, with the specific
+  structural reason (a weak coupling slope between role reallocation and
+  connectivity) stated as why this shouldn't yet be read as falsifying the
+  paper's central claim. This is flagged throughout as unresolved pending a true
+  joint ns-3 simulation.
+
+  Both manuscript versions recompiled (31 pages), zero undefined references,
+  zero dangling \refs.
+
+● Compacted using a summary written while you were away · turn off with
+  "idleCompaction": false in settings.json
+
+❯ is it done
+  ⎿  Referenced file main.tex
+  ⎿  Read ../simulation/cosim/make_cosim_figures.py (77 lines)
+  ⎿  Read ../simulation/cosim/analyze_cosim.py (154 lines)
+  ⎿  Read ../simulation/cosim/cosim.py (167 lines)
+  ⎿  Read ../simulation/cosim/data.py (77 lines)
+  ⎿  Skills restored (academic-research-skills:deep-research,
+     academic-research-skills:academic-pipeline)
+
+● Compacted using a summary written while you were away · turn off with
+  "idleCompaction": false in settings.json
+
+● Yes — it's done. Quick final verification check:
+
+  Listed 1 directory (ctrl+o to expand)
+
+● Confirmed — both main.pdf (419,649 bytes) and main_blind.pdf (418,366 bytes)
+  are current, and zero undefined references in either log.
+
+  Everything requested this session is complete:
+
+  1. Author info — Subarmaniam Kannan & Sumendra Yogarayan (Multimedia
+     University), funding set to none, conflicts-of-interest stated as none.
+  2. Abstract — trimmed from 513 to 256 words to align with MDPI's ~200-word
+     convention.
+  3. Joint co-simulator — built and executed (315 real runs), producing real
+     Figure A, Figure B, Table A, Table B, all grounded in bootstrap-resampled
+     real ns-3/inference data with clearly declared (not fabricated) protocol
+     parameters.
+  4. Honest negative finding reported plainly: fixed-roles/oracle ablations
+     outperform full AeroMesh on the model's Pareto frontier, with the
+     structural reason stated and flagged as unresolved pending a true joint
+     ns-3 simulation.
+  5. Both manuscript versions compile cleanly, blinding sync verified.
+
+  Nothing else is pending unless you want to pursue the full packet-level joint
+  ns-3 simulation as a separate next step.
+
+❯ explain abstract to 18 year old
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+● Here's the abstract, piece by piece, like you're explaining it to a friend:
+
+  The problem: When a typhoon, earthquake, or flood hits Southeast Asia, cell
+  towers and internet often go down right when rescuers need them most — both to
+  talk to each other and to see which buildings are damaged.
+
+  The idea: Build a swarm of drones that forms its own wifi network in the sky
+  (no towers needed) to keep people connected, and have those same drones look
+  at camera footage to automatically spot damaged buildings.
+
+  The key insight: Most people would build "network drones" and "camera-analysis
+  drones" as two separate systems. The paper argues you shouldn't — because a
+  drone's battery life and the fact it might be low on signal affects whether it
+  should relay messages or whether it should be running damage-detection AI,
+  and that decision has to keep changing in real time. So the paper designs one
+  combined system where drones constantly auction off these two jobs between
+  themselves.
+
+  What they actually tested (and this matters — they're being very honest about
+  it):
+  1. The networking part: They ran real simulations of the drone network during
+     three real disaster types (Philippine typhoon, Indonesian earthquake,
+     Vietnamese flood), and it worked better than existing methods in 2 of 3
+     cases — but they also admit it was worse for one group of users
+     (civilians), instead of hiding that.
+  2. The AI part: They trained a damage-detection AI and tested it on
+     messy/corrupted images, and also tested whether a model trained on one
+     country's damage photos still works on another country's. It did fine on
+     corrupted images but took a real hit (accuracy dropped like 70% to 42%)
+     when moved to a different country's data.
+  3. The combined part: This is the trickiest. They couldn't fully test the
+     networking AI and the damage-detection AI working together in one real
+     simulation (technical limitations), so they built a simplified
+     approximation instead. That approximation actually showed their "smart
+     auction" approach didn't beat a simpler fixed-role setup — a disappointing
+     result, which they report honestly rather than hiding, while explaining why
+     it's not the final word.
+
+  Bottom line: It's a drone-swarm disaster-response network with built-in damage
+  detection, tested mostly for real, with one part only approximately tested —
+  and the paper is upfront about exactly which numbers are solid and which are a
+  rougher estimate.
+
+❯ can you findout why this failure occuer; true joint ns-3 simulation. how to
+  solve it
+
+  Searched for 1 pattern, ran 3 shell commands (ctrl+o to expand)
+
+● Now reproducing the exact crash and testing the ASLR hypothesis directly.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+❯ do this again: test the networking AI and the damage-detection AI working
+  together in one real simulation
+
+  Read 1 file (ctrl+o to expand)
+
+● Found it. My reproduction command was wrong — I used different simulation
+  parameters than the actual campaign run. Let me rerun with the exact campaign
+  arguments.
+
+  Searched for 2 patterns, ran 1 shell command (ctrl+o to expand)
+
+● I found the real root cause, and it changes things significantly.
+
+  What actually happened: My earlier test reproducing the crash used the wrong
+  command-line arguments — I ran with the default simTime=300 and no --out path,
+  instead of the real campaign's --simTime=90 --areaSide=1000.0 --out=....
+  Checking results/campaign/campaign_log.csv, this exact cell
+  (aeromesh_ph_f1_n16_s1) is recorded as attempts=1, crashed_attempts=0, ok=True
+  — it succeeded on the first try. I just reran it 5/5 times with the correct
+  campaign parameters and it succeeded every time. It's not flaky — it's fully
+  deterministic. I was comparing apples to oranges.
+
+  What this means: The "ns-3 is unreliable in this environment" conclusion I
+  reported in the manuscript's Limitations section is wrong. The original
+  442-line aeromesh_sim.cc and its compiled binary are solid. The real blocker
+  to a true joint simulation isn't reproducibility — it's that the ns-3 program
+  currently only models the self-healing network layer. I checked the source:
+  there is no inference workload, no auction, no role allocation in it at all.
+  That logic only exists in the manuscript's Algorithm 2 and in the Python
+  co-simulator I built as a substitute.
+
+  To genuinely couple network + inference in ns-3, I'd need to add new C++
+  logic: a mechanism where some UAVs periodically go "inference-busy" (stop
+  beaconing/relaying for a duration matching the real measured inference latency
+  per severity level) and then measure how that affects connectivity, with
+  periodic FlowMonitor snapshots for the time series. That's a real feature
+  addition, not a flag tweak — on the order of a few hours of C++ work plus a
+  full campaign rerun (hundreds of seed/scenario combinations).
+
+● User answered Claude's questions:
+  ⎿  · I found the earlier ns-3 crash was my own reproduction mistake (wrong CLI
+     args), not a real flakiness bug — the binary is solid. But there's no
+     inference/auction logic in ns-3 at all right now, so building a true joint
+     simulation means adding real new C++ features (inference-busy duty cycle
+     per UAV, periodic snapshotting) and rerunning the full campaign. Given
+     that, how do you want to proceed? → Build it now (recommended)
+
+  Read 1 file, ran 1 shell command (ctrl+o to expand)
+
+● There's a real benchmark_exit_cost.py — let me check what it measured.
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+● I'll build this as a new, separate program (aeromesh_joint_sim.cc) rather than
+  touching the validated original — so the existing campaign data stays
+  completely untouched regardless of what happens here.
+
+● Write(~/Documents/AeroMesh/simulation/ns3/aeromesh_joint_sim.cc)
+  ⎿  Wrote 483 lines to
+     ~/Documents/AeroMesh/simulation/ns3/aeromesh_joint_sim.cc
+       1 // AeroMesh joint network+role-auction ns-3 simulation.
+       2 //
+       3 // Extends the validated aeromesh_sim.cc networking model (same
+         PHY/MAC,
+       4 // propagation, routing, self-healing beacon controller, and nod
+         e-failure
+       5 // process -- unchanged) with a real, measured coupling between
+         the network
+       6 // layer and the role auction described in the manuscript's Algo
+         rithm 2: at
+     … +477 lines (ctrl+o to expand)
+
+● Now let's find the exact compile command used for the original binary and
+  compile this one.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● Compiled cleanly on the first try. Let's validate it.
+
+  Ran 3 shell commands (ctrl+o to expand)
+● This is the same known, rare upstream ns-3 bug already documented in
+  run_campaign.py (marginal-SNR broadcast collision edge case) — not something
+  new. The original campaign handles it with a seed-perturbation retry. Let me
+  confirm that fix works here too.
+
+  Searched for 1 pattern, ran 3 shell commands (ctrl+o to expand)
+
+● The crash on scenario=id, failLevel=2 reproduces even in the original
+  validated binary — and checking campaign_log.csv, this is
+  aeromesh_id_f2_n16_s1, one of the two cells already disclosed in the
+  manuscript as having zero surviving seeds. So this isn't a bug I introduced —
+  it's the same known, already-honestly-reported ns-3 limitation. Good, the new
+  program is behaving consistently with the validated one.
+
+  Now building a joint campaign runner with the same seed-perturbation retry
+  strategy as the original campaign, scoped to the two ablations that matter
+  most for the manuscript's figures.
+
+● Write(~/Documents/AeroMesh/simulation/ns3/joint_campaign.py)
+  ⎿  Wrote 98 lines to
+     ~/Documents/AeroMesh/simulation/ns3/joint_campaign.py
+      1 #!/usr/bin/env python3
+      2 """Run the real joint network+role-auction ns-3 campaign.
+      3
+      4 Each (ablation, scenario, startFailLevel, seed) cell is a real ns
+        -3
+      5 packet-level run of aeromesh_joint_sim, which genuinely withdraws
+         UAVs from
+      6 relay duty for inference windows (see aeromesh_joint_sim.cc) and
+        snapshots
+      7 FlowMonitor at every epoch boundary for a real time-resolved per-
+     … +92 lines (~4 KB) (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The real joint campaign (81 cells: 3 ablations × 3 scenarios × 3 failLevels ×
+  3 seeds) is now running in the background — it'll take roughly 1.5–2 hours.
+  Here's what I found and what's happening now:
+
+  Root cause, in full:
+  1. The "ns-3 is flaky" conclusion from before this session's compaction was
+     itself a mistake — I had reproduced a crash using the wrong CLI arguments
+     (default simTime=300 instead of the campaign's actual simTime=90). With the
+     correct arguments, that specific cell is 100% deterministic and clean.
+  2. There is a genuine, pre-existing, rare upstream ns-3 bug ("Invalid WifiPhy
+     state RX" in wifi-phy-state-helper.cc, a known marginal-SNR
+     broadcast-collision edge case in ns-3's YansWifiPhy state machine) — but it
+     only affects a couple of specific cells, and it's the exact same
+     limitation already honestly disclosed in the manuscript (the two missing
+     cells aeromesh/id/f2/n16 and aodv/vn/f0/n16). It isn't new, and my new code
+     didn't introduce it.
+
+  What I built: aeromesh_joint_sim.cc, a new program (the original validated
+  binary is untouched) that extends the same validated network model with a real
+  coupling: at every 30-second epoch boundary, a subset of UAVs is genuinely
+  withdrawn from relay duty (moved out of radio range, beacon suspended) to
+  represent on-board inference workload, with the headcount driven by the real
+  severity-dependent formula from the auction design. FlowMonitor is snapshotted
+  at each boundary, giving a real, measured, time-resolved per-class PDR series
+  — not an approximation.
+
+  It covers three real conditions: full (self-healing + auction),
+  no_self_healing, and fixed_roles (no auction) — directly replacing the two
+  most load-bearing parts of the Python co-simulator's Figure A and the
+  controversial Table B finding.
+
+  I'll let it run and report back once it finishes with the real results, then
+  update the manuscript's figures, tables, and the now-inaccurate Limitations
+  claim about ns-3 reliability.
+
+● Background command "Launch the full joint ns-3 campaign in the background"
+completed (exit code 0)
+
+  Read 2 files, listed 1 directory, ran 1 shell command (ctrl+o to expand)
+
+● The notification was just for the launcher wrapper command, not the actual
+  campaign — the real joint_campaign.py process (pid 142470) is still running,
+  only 1/81 cells done so far. Let me set up a proper wait on the actual
+  process.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● The real campaign is running in the background — this will take roughly 1.5–2
+  hours to complete all 81 cells. I'll report back with the real results once it
+  finishes.
+
+❯ tatus
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+❯ status
+
+  Searched for 1 pattern, ran 1 shell command (ctrl+o to expand)
+
+● This matters a lot — let me check the full picture before going further, since
+  it may contradict what the manuscript currently claims.
+
+  Searched for 1 pattern, read 1 file, listed 2 directories, ran 2 shell commands (ctrl+o to expand)
+
+● Good — I chased down what looked like a serious discrepancy (my first-pass
+  count showed only 37/54 cells with a surviving seed, not the 52/54 the
+  manuscript claims) but it resolved cleanly: there's a second, more aggressive
+  retry pass (rerun_missing.py, up to 15 tries per seed-slot) that rescued 15 of
+  the original 17 fully-missing cells, leaving exactly the 2 the manuscript
+  already discloses (aodv/vn/f0/n16 and aeromesh/id/f2/n16). The manuscript's
+  52/54 claim is correct — no integrity issue there.
+
+  Back to your actual question — here's the joint campaign status:
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● All "id" scenario cells are failing 100% of the time with only 3 retries —
+  mirroring exactly what happened in the original campaign before the aggressive
+  rerun pass kicked in. My MAX_RETRY=3 budget is too thin for this scenario.
+  Let me stop this run and fix it before more time is wasted.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● Background command "Wait for the actual joint campaign process to finish, then
+show the final log" completed (exit code 0)
+
+● Found it — the source file's own comments gave the clue: synchronized
+  simultaneous events are the known trigger for this ns-3 bug (that's literally
+  why beacons were already desynchronized with jitter). My epoch-boundary role
+  rotation moves multiple UAVs at the exact same simulated instant every 30s —
+  reproducing that exact danger pattern, many times per run. Let me fix it with
+  the same jitter technique.
+
+  Read 1 file (ctrl+o to expand)
+
+● Update(~/Documents/AeroMesh/simulation/ns3/aeromesh_joint_sim.cc)
+  ⎿  Added 9 lines, removed 1 line
+      285                           : std::max<int>(5 - (int)severity, 2)
+           ;
+      286    nInference = std::min(nInference, st->nUav);
+      287  
+      288 +  // Desynchronize the role-switch instants across UAVs with s
+          +mall per-node                                                 
+      289 +  // jitter, exactly as SelfHealingApp::StartApplication alrea
+          +dy does for                                                   
+      290 +  // beacon phase: many nodes toggling SetDark() (an instantan
+          +eous position                                                 
+      291 +  // teleport) at the identical simulated instant reproduces t
+          +he same dense,                                                
+      292 +  // perfectly-synchronized-event condition that already requi
+          +red jitter to                                                 
+      293 +  // avoid the YansWifiPhy state-machine edge case noted above
+          + SendBeacon.                                                  
+      294 +  Ptr<UniformRandomVariable> jitterRv = CreateObject<UniformRa
+          +ndomVariable>();                                              
+      295    for (uint32_t i = 0; i < st->nUav; ++i) {
+      296      Ptr<SelfHealingApp> app = (*st->healApps)[i];
+      297      if (!app->IsAlive()) continue;
+      298      bool onInferenceDuty = ((i + epoch) % st->nUav) < nInferen
+           ce;
+      292 -    app->SetDark(onInferenceDuty);                            
+      299 +    double jitter = jitterRv->GetValue(0.0, 0.9);             
+      300 +    Simulator::Schedule(Seconds(jitter), &SelfHealingApp::SetD
+          +ark, app, onInferenceDuty);                                   
+      301    }
+      302  }
+      303  
+
+  Ran 3 shell commands (ctrl+o to expand)
+
+● I found the actual constraint, and it's a genuine physical limitation of the
+  simulator, not a bug in my code.
+
+  What's happening: The ph (Philippines) scenario is 100% reliable — 20/20 runs
+  succeeded across all the ablations and severities I tested. But id (Indonesia)
+  and vn (Vietnam) scenarios are failing 100% of the time at this joint
+  simulation's 300-second mission horizon (10 epochs × 30s). I traced this to
+  simulation duration, not my new role-rotation code: even the original,
+  unmodified, already-validated aeromesh_sim binary crashes on id/vn when run
+  for 300 seconds instead of the original campaign's 90 seconds. Indonesia and
+  Vietnam use a larger simulated area (1.6× and 1.2× the base), which means
+  weaker average signal margins — and the longer the run, the more chances the
+  simulator's known rare marginal-SNR collision bug gets to fire. At 90s it's
+  rare enough that retries usually rescue it (as the original campaign shows);
+  at 300s it's become essentially certain to crash, and no reasonable retry
+  budget fixes that because it's not really "bad luck on this seed" anymore,
+  it's "too much exposure time."
+
+  I don't see a way to fix this within reasonable effort — it would require
+  either shrinking the mission horizon (undermining the 10-epoch structure the
+  manuscript's protocol specifies) or deeper surgery on ns-3's PHY model itself
+  (large, risky, out of scope).
+
+● User answered Claude's questions:
+  ⎿  · The real joint ns-3 simulation is 100% reliable for the Philippines
+     scenario but 100% unreliable for Indonesia/Vietnam at the 300s mission
+     horizon (a genuine ns-3 physical-layer limitation, not a bug in my code).
+     How should I scope the real joint campaign given this? → Philippines real,
+     others stay approximated (recommended)
+
+● Update(~/Documents/AeroMesh/simulation/ns3/joint_campaign.py)
+  ⎿  Added 7 lines, removed 1 line
+      35      "no_self_healing": {"selfHealing": 0, "rolePolicy": "auctio
+          n"},
+      36      "fixed_roles": {"selfHealing": 1, "rolePolicy": "fixed"},
+      37  }
+      38 -SCENARIOS = ["ph", "id", "vn"]                                 
+      38 +SCENARIOS = ["ph"]                                             
+      39 +# id and vn are excluded: the 300s joint mission horizon runs i
+         +nto ns-3's                                                     
+      40 +# known YansWifiPhy marginal-SNR state-machine limitation at ~1
+         +00% failure                                                    
+      41 +# in their wider simulated area, even with the full retry budge
+         +t below (see                                                   
+      42 +# the manuscript's Limitations section for the measured ph-only
+         + reliability                                                   
+      43 +# finding). ph is unaffected and run here as real joint ns-3 da
+         +ta; id/vn                                                      
+      44 +# continue to use the reduced-fidelity Python co-simulator.    
+      45  FAIL_LEVELS = [0, 1, 2]
+      46  SEEDS = [1, 2, 3]
+      47  
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● The scoped campaign (27 cells: 3 ablations × 3 failLevels × 3 seeds,
+  Philippines only) is now running — should take about 25–30 minutes given the
+  ~60s per run we measured. I'll report back with the real results once it
+  finishes and then update the manuscript's figures, tables, and Limitations
+  section accordingly.
+
+❯ status
+
+  Read 1 file, ran 1 shell command (ctrl+o to expand)
+
+● Good — my earlier awk column-count was off (false alarm from my own check, not
+  a real problem). The actual data shows all 16 cells completed cleanly:
+  attempts=1, crashed_attempts=0, ok=True for every row. Philippines is behaving
+  exactly as reliably as expected.
+
+  Progress: 16/27 cells done, zero crashes/retries needed, ~18 minutes elapsed.
+  full and no_self_healing ablations are fully done; fixed_roles (the last 9
+  cells) is in progress. Should finish in another ~10-12 minutes. I'll report
+  back with the real numbers once it completes.
+
+❯ is it ok philinie use real and indonesia and vietnam use phython simulation
+  for reporting
+
+● Yes, it's methodologically fine — this is a common and accepted pattern in
+  simulation research when a documented simulator limitation blocks
+  full-fidelity coverage of some conditions. The key requirement is that it has
+  to be disclosed clearly, not blended together silently.
+
+  The one thing I need to get right in the writeup: Figure A and Table B can't
+  just show three scenarios as if they're all the same evidence tier. I'll make
+  sure to:
+  - Label the Philippines results explicitly as "real joint ns-3 measurement"
+  - Label Indonesia/Vietnam explicitly as "reduced-fidelity co-simulator
+    estimate" (as they already are)
+  - Keep them visually/statistically separated rather than pooling them into one
+    combined number that would obscure which parts are directly measured vs.
+    approximated — e.g., Table B's bootstrap CI should not mix real ph data with
+    approximated id/vn data as if equivalent
+
+  This mirrors exactly how the manuscript already handles the two missing ns-3
+  network cells (disclosed by name, not papered over), so it's consistent with
+  the paper's existing honesty standard. I'll check on the campaign and finish
+  the real analysis once it completes.
+❯ ok fine proceed
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Still running — 19/27 cells done, all clean (no retries needed). fixed_roles
+  ablation is in progress (the last 9 cells). I'll wait for it to finish before
+  moving to analysis.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● I'll continue once it finishes and run the real analysis — computing
+  time-resolved Φ(t) for Figure A (Philippines, real ns-3) and the full vs
+  fixed_roles comparison for Table B, then integrate into the manuscript
+  alongside the existing id/vn co-simulator results, clearly labeled by evidence
+  tier as discussed.
+
+● Background command "Wait for remaining fixed_roles cells to finish" completed
+(exit code 0)
+
+  Listed 1 directory (ctrl+o to expand)
+
+● Background command "Wait for the scoped ph-only joint campaign to finish"
+completed (exit code 0)
+
+● All 27/27 cells completed cleanly, zero retries needed. Now let's analyze the
+  real data.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Write(~/Documents/AeroMesh/simulation/ns3/joint_analyze.py)
+  ⎿  Wrote 193 lines to
+     ~/Documents/AeroMesh/simulation/ns3/joint_analyze.py
+       1 #!/usr/bin/env python3
+       2 """Analyze the real joint ns-3 campaign (Philippines scenario on
+         ly; see
+       3 joint_campaign.py for why id/vn are excluded). Produces:
+       4
+       5   joint_fig_a_ph.json    - real time-resolved Phi(t), full vs no
+         _self_healing
+       6   joint_table_a_ph.json  - real time-to-restore, full vs no_self
+         _healing
+       7   joint_table_b_ph.json  - real paired comparison, full vs fixed
+     … +187 lines (~8 KB) (ctrl+o to expand)
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● Both findings replicate with the real data — and reveal something new. Let me
+  build the validation figure and then integrate everything into the manuscript.
+
+● Write(~/Documents/AeroMesh/simulation/ns3/make_joint_figure.py)
+  ⎿  Wrote 52 lines to
+     ~/Documents/AeroMesh/simulation/ns3/make_joint_figure.py
+       1 #!/usr/bin/env python3
+       2 """Real joint ns-3 validation figure for the Philippines scenari
+         o (see
+       3 joint_analyze.py). Two panels: (a) real time-resolved Phi(t), fu
+         ll vs
+       4 no_self_healing, across the three failure severities; (b) real p
+         er-replicate
+       5 composite score, full vs fixed_roles, the same comparison Table
+         B of the
+       6 Python co-simulator reports at reduced fidelity for all three sc
+     … +47 lines (~2 KB) (ctrl+o to expand)
+
+  Read 1 file, ran 1 shell command (ctrl+o to expand)
+
+● Figure renders cleanly and honestly. Now let's integrate this into the
+  manuscript — a new validation subsection plus corrections to the abstract,
+  results-pending section, and Limitations.
+
+  Read 1 file, ran 1 shell command (ctrl+o to expand)
+
+● Update(main.tex)
+  ⎿  Added 17 lines, removed 1 line
+      459  \end{tabular}
+      460  \end{table}
+      461  
+      462 -Four of the six ablations behave as the design intends, each w
+          -ith a Holm-corrected effect distinguishable from zero: removin
+          -g self-healing, early exiting, or the uncertainty-aware policy
+          - each measurably hurts the composite score, and removing prior
+          -ity weighting has a small effect that does not survive correct
+          -ion, consistent with priority weighting being a reweighting of
+          - already-similar per-class delivery ratios rather than a large
+          - structural change. The remaining two ablations, fixed roles a
+          -nd the oracle controller, both score \emph{above} AeroMesh's f
+          -ull auctioned configuration, with the same direction and a com
+          -parable effect size for both. We read this as a genuine negati
+          -ve result for the specific reduced-fidelity coupling implement
+          -ed here, not as evidence about the real system: because the co
+          --simulator's only channel from the auction's role decisions ba
+          -ck to connectivity is the real measured fleet-size slope descr
+          -ibed above, and that slope is small relative to the inference 
+          -capacity an epoch of reduced inference role count costs, any p
+          -olicy that avoids reassigning inference vehicles under stress 
+          -scores well in this specific model almost by construction. Thi
+          -s is exactly the kind of structural model limitation we flagge
+          -d when introducing the co-simulator above, and it means Table~
+          -\ref{tab:cosimablation}'s negative finding for the auction spe
+          -cifically should not yet be read as falsifying the paper's cen
+          -tral co-design claim; it should be read as showing that this r
+          -educed-fidelity coupling is the wrong instrument to test that 
+          -specific claim, and that a full joint ns-3 simulation in which
+          - an inference-role vehicle is genuinely unavailable as a relay
+          -, which the flaky re-instrumentation attempt described above c
+          -ould not yet deliver reliably, remains necessary before the ce
+          -ntral claim can be properly adjudicated.                      
+      462 +Four of the six ablations behave as the design intends, each w
+          +ith a Holm-corrected effect distinguishable from zero: removin
+          +g self-healing, early exiting, or the uncertainty-aware policy
+          + each measurably hurts the composite score, and removing prior
+          +ity weighting has a small effect that does not survive correct
+          +ion, consistent with priority weighting being a reweighting of
+          + already-similar per-class delivery ratios rather than a large
+          + structural change. The remaining two ablations, fixed roles a
+          +nd the oracle controller, both score \emph{above} AeroMesh's f
+          +ull auctioned configuration, with the same direction and a com
+          +parable effect size for both. We read this as a genuine negati
+          +ve result for the specific reduced-fidelity coupling implement
+          +ed here, not as evidence about the real system: because the co
+          +-simulator's only channel from the auction's role decisions ba
+          +ck to connectivity is the real measured fleet-size slope descr
+          +ibed above, and that slope is small relative to the inference 
+          +capacity an epoch of reduced inference role count costs, any p
+          +olicy that avoids reassigning inference vehicles under stress 
+          +scores well in this specific model almost by construction. Thi
+          +s is exactly the kind of structural model limitation we flagge
+          +d when introducing the co-simulator above, and it means Table~
+          +\ref{tab:cosimablation}'s negative finding for the auction spe
+          +cifically should not yet be read as falsifying the paper's cen
+          +tral co-design claim; it should be read as showing that this r
+          +educed-fidelity coupling is the wrong instrument to test that 
+          +specific claim, and that a full joint ns-3 simulation in which
+          + an inference-role vehicle is genuinely unavailable as a relay
+          + remains the more direct instrument to test it.               
+      463 +                                                              
+      464 +\subsection{A real joint ns-3 check for the Philippines scenar
+          +io}                                                           
+      465 +\label{sec:results-joint-real}                                
+      466 +                                                              
+      467 +The re-instrumentation attempt referenced above did not in fac
+          +t expose a reproducibility problem in ns-3 itself; on closer i
+          +nspection the original negative result was an artifact of an i
+          +nconsistent reproduction command on our part, and the validate
+          +d network-layer binary is fully deterministic once invoked cor
+          +rectly. We therefore built a second, separate ns-3 program, \t
+          +exttt{aeromesh\_joint\_sim.cc}, that genuinely couples the net
+          +work and inference layers: at every thirty-second epoch bounda
+          +ry it withdraws the severity-appropriate number of vehicles fr
+          +om relay duty, exactly as the auction's role count does in the
+          + co-simulator above, moves them out of radio range for the epo
+          +ch, and restores them afterward, while FlowMonitor is snapshot
+          +ted at each boundary to yield a directly measured, time-resolv
+          +ed $\Phi(t)$ rather than a bootstrap-resampled approximation. 
+          +This program is independent of \texttt{aeromesh\_sim.cc} and i
+          +ts validated campaign; running it does not alter or depend on 
+          +any previously reported network-layer result.                 
+      468 +                                                              
+      469 +Across the full three-hundred-second, ten-epoch mission horizo
+          +n this program is completely reliable for the Philippines scen
+          +ario, with zero crashed attempts across all twenty-seven real 
+          +runs covering the full configuration, the no-self-healing abla
+          +tion, and the fixed-roles ablation at every failure-process se
+          +verity and random seed. It is not reliable for the Indonesia a
+          +nd Vietnam scenarios at this duration: even the original, unmo
+          +dified, already-validated network-layer binary aborts on the s
+          +ame known YansWifiPhy marginal-signal-to-noise-ratio state-mac
+          +hine limitation reported in Section~\ref{sec:results-network} 
+          +when run for three hundred seconds rather than the ninety seco
+          +nds used in the completed network-layer campaign, because the 
+          +longer duration gives the rare collision condition proportiona
+          +lly more opportunities to occur, and this effect is more prono
+          +unced in Indonesia and Vietnam's wider simulated area. We ther
+          +efore report real joint ns-3 results for the Philippines scena
+          +rio only; Indonesia and Vietnam continue to rely on the reduce
+          +d-fidelity co-simulator above, and the two evidence tiers are 
+          +kept explicitly separate rather than pooled into a single stat
+          +istic.                                                        
+      470 +                                                              
+      471 +\begin{figure}[H]                                             
+      472 +\centering                                                    
+      473 +\includegraphics[width=0.95\textwidth]{figures/joint_ph_valida
+          +tion.pdf}                                                     
+      474 +\caption{Real joint ns-3 check, Philippines scenario only. (a)
+          + Directly measured, time-resolved priority-weighted connectivi
+          +ty $\Phi(t)$, full AeroMesh configuration against the no-self-
+          +healing ablation, across the three failure-process severities;
+          + both configurations converge to full connectivity within one 
+          +to three epochs in this scenario's base simulated area, and se
+          +lf-healing's measured benefit here is small and inconsistent i
+          +n direction rather than the clear advantage the co-simulator's
+          + broader scenario mix shows. (b) Real paired comparison of Aer
+          +oMesh's full auctioned configuration against the fixed-roles a
+          +blation ($n=9$ paired failure-severity-seed observations), usi
+          +ng the same composite score as Table~\ref{tab:cosimablation}; 
+          +fixed roles scores higher than the full configuration, Cliff's
+          + $\delta=-0.59$, Wilcoxon $p=0.031$ uncorrected.}             
+      475 +\label{fig:jointvalidate}                                     
+      476 +\end{figure}                                                  
+      477 +                                                              
+      478 +Figure~\ref{fig:jointvalidate} reports both checks plainly. Pa
+          +nel (a) complicates, rather than simply confirms, the co-simul
+          +ator's self-healing finding: in this real joint simulation, th
+          +e Philippines scenario's base simulated area is dense enough t
+          +hat both configurations recover full connectivity within the f
+          +irst one to three epochs regardless of self-healing, so the cl
+          +ear self-healing advantage Table~\ref{tab:cosimrestore} report
+          +s is not reproduced at real-data resolution for this specific 
+          +scenario; it may be a genuine property of the Philippines geog
+          +raphy's density, or it may reflect that the co-simulator's AOD
+          +V substitution for the no-self-healing ablation drew from a sc
+          +enario mix dominated by sparser conditions. Panel (b) corrobor
+          +ates the co-simulator's more consequential and more surprising
+          + finding: with directly measured connectivity rather than a bo
+          +otstrap approximation, fixed roles still scores above AeroMesh
+          +'s full auctioned configuration, with an effect size and direc
+          +tion consistent with Table~\ref{tab:cosimablation}'s pooled th
+          +ree-scenario result, on a much smaller but fully real sample (
+          +$n=9$ against $n=45$). This real check does not resolve the st
+          +ructural concern raised above, that the auction's channel back
+          + to connectivity may simply be too weak a proxy in any single-
+          +scenario slice, but it does rule out the possibility that the 
+          +co-simulator's negative auction finding was purely an artifact
+          + of its bootstrap approximation; the same qualitative result a
+          +ppears when every number in the comparison is a direct ns-3 me
+          +asurement. A full joint ns-3 campaign across all three scenari
+          +os remains the correct instrument to settle the central claim 
+          +with the statistical power $n=45$ provides, and extending the 
+          +reliability shown here in Philippines to Indonesia and Vietnam
+          +'s wider simulated area is the concrete next step toward it.  
+      479  \label{sec:results-pending}
+      480  
+      481  \section{Discussion}
+
+● Now let's correct the inaccurate "ns-3 reproducibility problem" claim in
+  Limitations, and update the Discussion/Conclusion/abstract to reflect the real
+  validation.
+
+● Update(main.tex)
+  ⎿  Added 1 line, removed 1 line
+      496  \section{Limitations}
+      497  \label{sec:limitations}
+      498  
+      499 -Several limitations follow directly from the state of the work
+          - at the time of this manuscript. First, while the network-laye
+          -r results in Section~\ref{sec:results-network} and the damage-
+          -assessment results in Section~\ref{sec:results-inference} are 
+          -now both real measured findings, they were measured independen
+          -tly of each other, and the joint co-design results that would 
+          -combine them through the auction-based placement and deferral 
+          -logic rest on a reduced-fidelity co-simulator rather than a fu
+          -ll packet-level joint ns-3 simulation, for the reasons given i
+          -n Section~\ref{sec:results-pending}. The paper's central co-de
+          -sign claim, that connectivity restoration and damage assessmen
+          -t should be solved as one joint problem rather than as two sta
+          -cked layers, is accordingly still a hypothesis pending a more 
+          -faithful joint evaluation rather than an established conclusio
+          -n, even though both of its component layers are now independen
+          -tly validated and the reduced-fidelity coupling has already su
+          -rfaced a specific, honestly reported negative result that a mo
+          -re faithful simulation will need to confirm or overturn. Secon
+          -d, a full packet-level joint ns-3 simulation was attempted but
+          - not completed for this manuscript: extending ns-3 with the pe
+          -r-interval FlowMonitor instrumentation needed for a directly m
+          -easured $\Phi(t)$ exposed a reproducibility problem in the sim
+          -ulator itself, where the same binary and seed that had produce
+          -d a surviving run in the completed network-layer campaign no l
+          -onger reproduced that run on a later invocation, consistent wi
+          -th the same upstream physical-layer sensitivity already report
+          -ed in Section~\ref{sec:results-network} rather than with any c
+          -hange we made; we report this as a concrete, encountered obsta
+          -cle to the full protocol rather than omitting it. Third, no de
+          -dicated Southeast Asian unmanned aerial vehicle damage-assessm
+          -ent benchmark at the scale of xBD currently exists, and the Pa
+          -lu, Indonesia subset within xBD, while a genuine in-domain sou
+          -rce, remains far … [+1617 chars]                              
+      499 +Several limitations follow directly from the state of the work
+          + at the time of this manuscript. First, while the network-laye
+          +r results in Section~\ref{sec:results-network} and the damage-
+          +assessment results in Section~\ref{sec:results-inference} are 
+          +now both real measured findings, they were measured independen
+          +tly of each other, and the joint co-design results that would 
+          +combine them through the auction-based placement and deferral 
+          +logic rest on a reduced-fidelity co-simulator rather than a fu
+          +ll packet-level joint ns-3 simulation, for the reasons given i
+          +n Section~\ref{sec:results-pending}. The paper's central co-de
+          +sign claim, that connectivity restoration and damage assessmen
+          +t should be solved as one joint problem rather than as two sta
+          +cked layers, is accordingly still a hypothesis pending a more 
+          +faithful joint evaluation rather than an established conclusio
+          +n, even though both of its component layers are now independen
+          +tly validated and the reduced-fidelity coupling has already su
+          +rfaced a specific, honestly reported negative result that a mo
+          +re faithful simulation will need to confirm or overturn. Secon
+          +d, a full packet-level joint ns-3 simulation across all three 
+          +scenarios was attempted but not completed for this manuscript.
+          + An initial re-instrumentation attempt appeared to expose a re
+          +producibility problem in the simulator itself; on investigatio
+          +n this was an artifact of an inconsistent reproduction command
+          + rather than a real property of ns-3, and a second, independen
+          +t joint-simulation program, described in Section~\ref{sec:resu
+          +lts-joint-real}, ran completely reliably for the Philippines s
+          +cenario across all twenty-seven real runs attempted. It is not
+          + reliable for Indonesia and Vietnam at the full three-hundred-
+          +second mission horizon, where even the original validated netw
+          +ork-layer binary hits the same known YansWifiPhy limitation re
+          +ported in Section~\ref{sec:results-network} far more often at 
+          +this longer duration and wider simulated area; we report this 
+          +duration- and ar … [+2232 chars]                              
+      500  
+      501  Table~\ref{tab:risks} lists the remaining risks identified dur
+           ing design, together with the mitigation that the experimental
+            protocol in Section~\ref{sec:experiments} builds in for each 
+           one.
+      502  
+
+  Searched for 1 pattern (ctrl+o to expand)
+
+● Good, already cleaned up in the earlier edit. Now update the Discussion
+  paragraph and Conclusion to mention the real validation.
+
+● Update(main.tex)
+  ⎿  Added 1 line, removed 1 line
+      481  \section{Discussion}
+      482  \label{sec:discussion}
+      483  
+      484 -The central design claim of this paper, that connectivity rest
+          -oration and damage assessment should be solved as one joint pr
+          -oblem rather than as two stacked layers, was to be tested dire
+          -ctly from the Pareto frontier in Figure~\ref{fig:cosimpareto} 
+          -by comparing AeroMesh's full configuration against the fixed-r
+          -ole ablation. The reduced-fidelity co-simulator built for this
+          - manuscript does not show AeroMesh dominating that ablation, a
+          -s Table~\ref{tab:cosimablation} reports plainly rather than om
+          -its, but Section~\ref{sec:results-pending} also gives the spec
+          -ific structural reason that result should not yet be read as f
+          -alsifying the claim: the coupling layer available to us can on
+          -ly move connectivity through a small measured fleet-size slope
+          -, which systematically favors any policy that never reassigns 
+          -inference vehicles, regardless of what a full joint simulation
+          - would show. We state this as an open question rather than a s
+          -ettled negative result, and a full packet-level joint ns-3 sim
+          -ulation, in which an inference-role vehicle is genuinely unava
+          -ilable as a relay, remains the correct instrument to settle it
+          -.                                                             
+      484 +The central design claim of this paper, that connectivity rest
+          +oration and damage assessment should be solved as one joint pr
+          +oblem rather than as two stacked layers, was to be tested dire
+          +ctly from the Pareto frontier in Figure~\ref{fig:cosimpareto} 
+          +by comparing AeroMesh's full configuration against the fixed-r
+          +ole ablation. The reduced-fidelity co-simulator built for this
+          + manuscript does not show AeroMesh dominating that ablation, a
+          +s Table~\ref{tab:cosimablation} reports plainly rather than om
+          +its, but Section~\ref{sec:results-pending} also gives the spec
+          +ific structural reason that result should not yet be read as f
+          +alsifying the claim: the coupling layer available to us can on
+          +ly move connectivity through a small measured fleet-size slope
+          +, which systematically favors any policy that never reassigns 
+          +inference vehicles, regardless of what a full joint simulation
+          + would show. A real joint ns-3 check for the Philippines scena
+          +rio, reported in Section~\ref{sec:results-joint-real}, corrobo
+          +rates this specific negative finding with directly measured ra
+          +ther than bootstrap-resampled connectivity, which rules out th
+          +e possibility that it was purely an artifact of the co-simulat
+          +or's approximation, while also showing that the companion self
+          +-healing finding does not reproduce as cleanly in that one sce
+          +nario's real data. We state the auction result as an open ques
+          +tion rather than a settled negative result, and a full joint n
+          +s-3 campaign across all three scenarios, which Section~\ref{se
+          +c:results-joint-real} shows is now reliable for at least one o
+          +f them, remains the correct instrument to settle it with full 
+          +statistical power.                                            
+      485  
+      486  The dataset-bias risk raised in Section~\ref{sec:related} dese
+           rves explicit treatment here rather than only in a limitations
+            paragraph. The large-scale benchmarks available for damage as
+           sessment, namely xBD, FloodNet, and RescueNet, were built prim
+           arily from United States and Caribbean imagery, and aerial obl
+           ique imagery from a Philippine or Indonesian disaster differs 
+           in building density, roofing material, and vegetation from the
+            imagery those benchmarks contain. The Palu, Indonesia tsunami
+            subset within xBD partially addresses this gap, but at much s
+           maller scale than the rest of xBD. We treated this as a first-
+           class experimental question through the cross-dataset transfer
+            probe reported in Section~\ref{sec:results-inference} and Fig
+           ure~\ref{fig:transfer} rather than as an unexamined assumption
+           , and the measured accuracy drop under transfer, 28 points in 
+           one direction and 49 points in the other, confirms the concern
+            we raised in advance of running it. The more important questi
+           on, which the conformal calibration design in Section~\ref{sec
+           :methods} is built specifically to test, is whether the system
+           's own uncertainty estimates correctly become more conservativ
+           e under that same distribution shift. The measured answer is m
+           ixed rather than simply reassuring: the calibrated prediction-
+           set coverage does hold close to its target under transfer, but
+            the error rate among the model's own confident single-label p
+           redictions nearly quadruples, from 9.7 to 38.8 percent, which 
+           means a system that exposed only point predictions and their r
+           aw softmax confidence, rather than full conformal sets, would 
+           become substantially less trustworthy under exactly the distri
+           bution shift it is most likely to encounter in a real Southeas
+           t Asian deployment. We read this as validating the design choi
+           ce to expose set-valued, conformally calibrated output rather 
+           than a single confident label, while also showing that calibra
+           tion alone does not fully solve the dataset-bias problem it is
+            meant to guard  … [+8 chars]
+      487  
+
+● Update(main.tex)
+  ⎿  Added 1 line, removed 1 line
+      521  \section{Conclusions}
+      522  \label{sec:conclusions}
+      523  
+      524 -This paper has presented AeroMesh, a decentralized unmanned ae
+          -rial vehicle mesh design that treats post-disaster connectivit
+          -y restoration and on-board damage assessment as one joint opti
+          -mization problem rather than as two independently engineered l
+          -ayers, and has grounded that design concretely in the typhoon,
+          - earthquake, and monsoon-flood corridors of the Philippines, I
+          -ndonesia, and Vietnam. We have given a complete formal problem
+          - statement, a complete three-loop decentralized control design
+          -, a fully specified experimental protocol spanning multiple pu
+          -blic disaster-imagery benchmarks and three named Southeast Asi
+          -an disaster scenarios, and real measured results for both of t
+          -he design's two component layers evaluated independently: netw
+          -ork-layer results from a completed packet-level ns-3 campaign,
+          - reported in Table~\ref{tab:netresults} together with their on
+          -e genuinely unflattering finding rather than only their favora
+          -ble ones, and damage-assessment results from a trained early-e
+          -xit classifier evaluated under our corruption pipeline and und
+          -er bidirectional cross-dataset transfer, reported in Figures~\
+          -ref{fig:transfer} and~\ref{fig:riskcoverage} together with the
+          - finding that transfer degrades raw prediction confidence far 
+          -more than it degrades calibrated set coverage. For the remaini
+          -ng joint co-design results, a full packet-level joint ns-3 sim
+          -ulation proved unreliable in the compute environment available
+          - for this manuscript, so we built and report a reduced-fidelit
+          -y Python co-simulator instead, coupling the same two independe
+          -ntly measured layers through the auction logic of Algorithm~\r
+          -ef{alg:auction} with its modeling simplifications stated expli
+          -citly in Section~\ref{sec:results-pending} rather than absorbe
+          -d silently into the numbers. That co-simulator does not show A
+          -eroMesh's full configuration dominating the fixed-role or orac
+          -le-controller ablations on the joint frontier, a result we rep
+          -ort plainly together with the specific structural reason it sh
+          -ould not yet be  … [+283 chars]                               
+      524 +This paper has presented AeroMesh, a decentralized unmanned ae
+          +rial vehicle mesh design that treats post-disaster connectivit
+          +y restoration and on-board damage assessment as one joint opti
+          +mization problem rather than as two independently engineered l
+          +ayers, and has grounded that design concretely in the typhoon,
+          + earthquake, and monsoon-flood corridors of the Philippines, I
+          +ndonesia, and Vietnam. We have given a complete formal problem
+          + statement, a complete three-loop decentralized control design
+          +, a fully specified experimental protocol spanning multiple pu
+          +blic disaster-imagery benchmarks and three named Southeast Asi
+          +an disaster scenarios, and real measured results for both of t
+          +he design's two component layers evaluated independently: netw
+          +ork-layer results from a completed packet-level ns-3 campaign,
+          + reported in Table~\ref{tab:netresults} together with their on
+          +e genuinely unflattering finding rather than only their favora
+          +ble ones, and damage-assessment results from a trained early-e
+          +xit classifier evaluated under our corruption pipeline and und
+          +er bidirectional cross-dataset transfer, reported in Figures~\
+          +ref{fig:transfer} and~\ref{fig:riskcoverage} together with the
+          + finding that transfer degrades raw prediction confidence far 
+          +more than it degrades calibrated set coverage. For the remaini
+          +ng joint co-design results, a full packet-level joint ns-3 sim
+          +ulation across all three scenarios was not completed for this 
+          +manuscript, so we built and report a reduced-fidelity Python c
+          +o-simulator, coupling the same two independently measured laye
+          +rs through the auction logic of Algorithm~\ref{alg:auction} wi
+          +th its modeling simplifications stated explicitly in Section~\
+          +ref{sec:results-pending} rather than absorbed silently into th
+          +e numbers. That co-simulator does not show AeroMesh's full con
+          +figuration dominating the fixed-role or oracle-controller abla
+          +tions on the joint frontier, a result we report plainly togeth
+          +er with the specific structural reason it should not yet be re
+          +ad as a settled  … [+713 chars]                               
+      525  
+      526  \vspace{6pt}
+      527  
+
+● Now the abstract — one sentence needs updating to mention the real validation
+  without blowing past the word budget.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Update(main.tex)
+  ⎿  Added 1 line, removed 1 line
+      34  
+      35  \corres{Correspondence: subar.kannan@mmu.edu.my}
+      36  
+      37 -\abstract{Terrestrial networks in Southeast Asia repeatedly fai
+         -l during the typhoons, earthquakes, and monsoon floods that mak
+         -e connectivity most valuable, cutting off responders and the im
+         -agery decision makers need. We propose AeroMesh, a self-organiz
+         -ing aerial mesh of unmanned aerial vehicles providing priority-
+         -differentiated connectivity alongside on-board edge inference f
+         -or building-damage assessment from degraded imagery. Our centra
+         -l claim is that connectivity restoration and damage assessment 
+         -should be co-designed rather than stacked as independent layers
+         -, since the choice of which vehicle relays and which senses mus
+         -t be re-solved as batteries drain and imagery quality fluctuate
+         -s. We formalize this as a stochastic online optimization solved
+         - by three decentralized control loops for mesh formation, role 
+         -auctioning, and uncertainty-aware early-exit inference with cro
+         -ss-mesh deferral. A completed packet-level ns-3 campaign across
+         - 52 of 54 scenario cells spanning named Philippine, Indonesian,
+         - and Vietnamese disaster corridors shows AeroMesh matching or e
+         -xceeding two routing baselines on responder-class delivery in t
+         -wo of three scenarios, with one civilian-class weakness reporte
+         -d alongside the favorable results rather than omitted. A traine
+         -d early-exit damage classifier evaluated under a corruption pip
+         -eline and bidirectional cross-dataset transfer shows substantia
+         -l accuracy drops under transfer, 70.3 to 42.3 percent and 83.7 
+         -to 34.4 percent, while split-conformal coverage degrades only m
+         -odestly as raw prediction confidence becomes markedly less trus
+         -tworthy. A reduced-fidelity co-simulator coupling these two lay
+         -ers through the auction does not show AeroMesh dominating a fix
+         -ed-role ablation on the resulting connectivity-assessment front
+         -ier, a result we report together with the specific structural r
+         -eason it should not yet be read as a settled verdict on the pap
+         -er's central co-design claim.}                                 
+      37 +\abstract{Terrestrial networks in Southeast Asia repeatedly fai
+         +l during the typhoons, earthquakes, and monsoon floods that mak
+         +e connectivity most valuable, cutting off responders and the im
+         +agery decision makers need. We propose AeroMesh, a self-organiz
+         +ing aerial mesh of unmanned aerial vehicles providing priority-
+         +differentiated connectivity alongside on-board edge inference f
+         +or building-damage assessment from degraded imagery. Our centra
+         +l claim is that connectivity restoration and damage assessment 
+         +should be co-designed rather than stacked as independent layers
+         +, since the choice of which vehicle relays and which senses mus
+         +t be re-solved as batteries drain and imagery quality fluctuate
+         +s. We formalize this as a stochastic online optimization solved
+         + by three decentralized control loops for mesh formation, role 
+         +auctioning, and uncertainty-aware early-exit inference with cro
+         +ss-mesh deferral. A completed packet-level ns-3 campaign across
+         + 52 of 54 scenario cells spanning named Philippine, Indonesian,
+         + and Vietnamese disaster corridors shows AeroMesh matching or e
+         +xceeding two routing baselines on responder-class delivery in t
+         +wo of three scenarios, with one civilian-class weakness reporte
+         +d alongside the favorable results rather than omitted. A traine
+         +d early-exit damage classifier evaluated under a corruption pip
+         +eline and bidirectional cross-dataset transfer shows substantia
+         +l accuracy drops under transfer, 70.3 to 42.3 percent and 83.7 
+         +to 34.4 percent, while split-conformal coverage degrades only m
+         +odestly as raw prediction confidence becomes markedly less trus
+         +tworthy. A reduced-fidelity co-simulator coupling these two lay
+         +ers through the auction does not show AeroMesh dominating a fix
+         +ed-role ablation on the resulting connectivity-assessment front
+         +ier, a finding corroborated by a real joint ns-3 simulation for
+         + one of the three scenarios, which we report together with the 
+         +specific structural reason it should not yet be read as a settl
+         +ed verdict on the paper's central co-design cla … [+4 chars]   
+      38  
+      39  \keyword{unmanned aerial vehicles; disaster response; self-heal
+          ing networks; flying ad hoc networks; edge inference; uncertain
+          ty quantification; Southeast Asia; post-disaster communication;
+           damage assessment; connectivity maintenance}
+      40  
+
+● Also update the Table B label reference and the fourth Limitations item that
+  still says "two of the 54...are reported as unmeasured" — that one's fine
+  (unrelated), but let's check the earlier "Fourth" limitation about ns-3
+  hardware validation doesn't conflict.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Good — all consistent now (270-word abstract, slightly over the earlier 256
+  but acceptable given the added substance; Limitations item 4 about the 2
+  unmeasured network cells is unrelated and still accurate). Now let's copy the
+  figure and recompile.
+
+  Listed 1 directory (ctrl+o to expand)
+
+● Already there. Now compile main.tex.
+
+  Ran 1 shell command (ctrl+o to expand)
+● Clean compile, 32 pages, zero errors/undefined refs. Now let's check for
+  dangling label references and regenerate the blind version.
+
+  Made 2 scratchpad edits +43 -15, searched for 1 pattern, read 1 file, listed 1 directory, ran 3 shell commands (ctrl+o to expand)
+
+● All 7 patterns matched exactly once. Now compile main_blind.tex.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Errors in the blind compile — let's check.
+
+  Made 1 scratchpad edit +9 -9, searched for 1 pattern, ran 1 shell command (ctrl+o to expand)
+
+● Now recompile.
+
+  Made 1 scratchpad edit +1 -1, searched for 1 pattern, ran 3 shell commands (ctrl+o to expand)
+
+● Fixed. Now recompile.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Clean compile, zero errors, 32 pages matching main.pdf, 15 diff lines (exactly
+  the 7 anonymization substitutions). Let's do a final content sanity check.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+● Everything checks out. Summary of what's now in the manuscript:
+
+  Real joint ns-3 simulation built and run. I found that the earlier "ns-3 is
+  unreliable" conclusion was itself a mistake (wrong reproduction command),
+  built a second program (aeromesh_joint_sim.cc) that genuinely withdraws UAVs
+  from relay duty during inference windows and measures real time-resolved
+  connectivity, and ran a full 27-run campaign — 100% reliable for the
+  Philippines scenario, with zero crashes.
+
+  Two honest findings came out of the real data:
+  - It corroborates the co-simulator's most consequential (and unflattering)
+    result: fixed roles still beats the full auctioned AeroMesh configuration
+    with real data (Cliff's δ=-0.59, p=0.031) — ruling out that this was just an
+    artifact of the earlier approximation.
+  - It complicates the self-healing finding: in this real data, Philippines'
+    dense area means both configurations reach full connectivity within 1-3
+    epochs regardless of self-healing, so the clean self-healing advantage from
+    the co-simulator doesn't reproduce here.
+
+  Scope, clearly disclosed: Indonesia/Vietnam remain on the Python co-simulator
+  — the same long-duration run exposes ns-3's known marginal-SNR PHY bug almost
+  deterministically in their wider simulated area, a genuine limitation, not
+  something fixable with more retries. A new subsection, updated
+  Discussion/Conclusion/Limitations, and a corrected (previously wrong) claim
+  about ns-3 reproducibility are all in place.
+
+  Both main.pdf and main_blind.pdf compiled cleanly (32 pages, zero errors, zero
+  dangling references), with the new Figure B-validate and real author info
+  intact.

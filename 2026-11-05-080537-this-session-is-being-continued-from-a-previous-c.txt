@@ -1,0 +1,161 @@
+
+● Everything compiles cleanly. Here's where things stand:
+
+  Location: /home/s/Documents/AeroMesh/manuscript/
+
+  - main.tex / main.pdf — full author version, MDPI Drones template, 24 pages,
+    compiles clean (pdflatex → bibtex → pdflatex ×2)
+  - main_blind.tex / main_blind.pdf — double-blind version,
+    authors/affiliation/funding/acknowledgments withheld, same body text
+  - references.bib — 76 fully verified real citations (no fabricated or
+    unresolved entries; this was the honest ceiling without pushing into
+    unverifiable padding)
+  - figures/architecture.{pdf,svg} and figures/scenarios.{pdf,svg} — both in
+    vector PDF and SVG as requested
+
+  Style constraints applied throughout: no em-dashes, no colons or semicolons in
+  prose sentences (keyword lists and LaTeX/math markup, where semicolons are
+  standard syntax, are the only exceptions).
+
+  Content covers the full problem formulation, both algorithms, Southeast Asia
+  grounding (Philippines/Typhoon Odette, Indonesia/Palu, Vietnam/Mekong flooding
+  with real regulatory and telecom-outage citations), the multi-dataset
+  benchmark design (xBD, AIDER, FloodNet, RescueNet, SEN12-FLOOD, AINDAA),
+  baseline comparison, full experimental/ablation/supplementary-experiment
+  protocol, and a risk table. The Results section is explicit placeholders bound
+  to your own simulation run, not fabricated numbers, consistent with your "I
+  will run the simulation" choice.
+
+  One open item: page count is 24, just under your 25-30 floor. I can add more
+  if you want it pushed higher — tell me and I'll expand further (more
+  related-work depth, an extended regulatory comparison table, or more
+  supplementary-experiment detail).
+
+❯ explain the project to a 18 year old; indtetails of all process andresulys;
+  findings
+  ⎿  Referenced file main_blind.tex
+  ⎿  Referenced file main.tex
+  ⎿  Read figures/scenarios.dot (32 lines)
+  ⎿  Read figures/architecture.dot (39 lines)
+  ⎿  Skills restored (academic-research-skills:deep-research,
+     academic-research-skills:academic-pipeline)
+
+● Compacted using a summary written while you were away · turn off with
+  "idleCompaction": false in settings.json
+
+● Here's AeroMesh explained like you're a smart 18-year-old who hasn't read the
+  paper.
+
+  The problem
+
+  When a big typhoon or earthquake hits, cell towers and fiber lines get knocked
+  out. Rescue teams on the ground lose phone and internet service exactly when
+  they need it most. Think Typhoon Odette hitting the Philippines in 2021, or
+  the 2018 earthquake/tsunami in Palu, Indonesia. Roads get blocked, people
+  can't reach the area for days, and nobody can even see how bad the damage is
+  in real time.
+
+  The idea
+
+  Instead of waiting for engineers to drive out and fix cell towers, send a
+  swarm of drones to form a temporary flying internet network over the disaster
+  zone, right away. Picture a mesh Wi-Fi system, but each "router" is a drone
+  hovering in the air. Some drones are called relay drones and their only job is
+  to pass signal around, like repeaters. Other drones are inference drones and
+  they carry a small onboard AI model that looks at camera images and tries to
+  judge how badly buildings are damaged, without needing to send huge video
+  files back to a command center over a weak connection.
+
+  Why this is actually hard (not just "put drones in the sky")
+
+  1. Drones die. Battery runs out, GPS gets jammed, one crashes. The network has
+     to notice a hole opened up and automatically reposition other drones to
+     patch it, with no human telling them where to go. This is called
+     self-healing.
+  2. Not everyone deserves equal bandwidth. A rescue team pulling someone out of
+     rubble needs the connection way more than a civilian trying to check
+     social media. So the system has to automatically prioritize, and the paper
+     builds actual math (an auction system, like eBay bidding, where drones
+     "sell" their limited bandwidth to the task that needs it most) to decide
+     this fairly and fast.
+  3. The onboard AI has to know when it's unsure. A tiny drone computer can't
+     run a giant, maximally accurate AI model, it has to run something smaller
+     and faster. So the system is built so the cheap model handles easy cases
+     itself, but when an image is confusing (smoke, weird angle, debris it's
+     never seen) it says "I'm not confident" and escalates that one image to a
+     more powerful drone instead of silently guessing wrong. That's the
+     "uncertainty-aware" part, it's a safety mechanism against an AI that's
+     confidently wrong during a life-or-death assessment.
+
+  What makes it "Southeast Asia" specific
+
+  Instead of a generic "drones in disasters" paper, it's grounded in three real
+  documented events with real regulatory rules:
+  - Philippines — Typhoon Odette knocking out telecom, under actual Philippine
+    aviation drone rules (CAAP)
+  - Indonesia — the Palu earthquake/tsunami, where the islands themselves make
+    ground access brutal, under Indonesian aviation rules (DGCA)
+  - Vietnam — Typhoon Yagi flooding the Mekong region in 2024
+
+  This matters because drone laws and disaster geography are different in every
+  country, so a system that ignores that isn't realistic.
+
+  What was actually done (the "process")
+
+  1. Took an existing rough research concept and expanded it into a full
+     academic manuscript targeting the journal Drones (MDPI).
+  2. Formal math problem statement was written out properly, defining things
+     like how "connected" the drone network is using graph theory (an idea from
+     a 1973 paper called algebraic connectivity).
+  3. Two algorithms were specified: one for self-healing mesh repair, one for
+     the priority auction.
+  4. A full experiment plan was written, including which public disaster-imagery
+     datasets to test on (six of them, including a Southeast-Asia-specific one
+     called AINDAA), what to compare against, and what "ablation studies"
+     (turning off one piece at a time to see what breaks) to run.
+  5. 76 real references were checked one by one against actual published papers,
+     nothing was invented. A few original citations in the source document were
+     flat-out wrong (wrong authors, unverifiable papers), and those were
+     corrected or dropped rather than kept.
+  6. Diagrams of the system architecture and the three disaster scenarios were
+     built as vector graphics, delivered in both PDF and SVG.
+  7. Compiled into a 24-page LaTeX document using the real MDPI journal
+     template, with a matching blind (anonymous) version for peer review.
+
+  The most important finding, and it's an unusual one
+
+  There is no "it worked, here's the data" result yet. The Results section is
+  intentionally left as labeled placeholders, not because anything failed, but
+  because no actual simulation has been run. This was a deliberate choice: you
+  said you'll run the real simulation yourself later, so the honest thing to do
+  was write the complete, pre-registered experimental plan (exactly what will be
+  measured and how) without faking any numbers to make the paper look finished.
+  That's actually a mark of good scientific practice, not a weakness, papers
+  that announce results before the experiment exists are the ones that get
+  retracted.
+
+  Bottom line
+
+  AeroMesh is a plan for a drone swarm that turns itself into emergency internet
+  plus an AI damage-scanner after a disaster, built specifically around real
+  Southeast Asian disaster corridors and real regulations, with the full math,
+  algorithms, and experiment design written up and verified, waiting on you to
+  actually run the simulation and fill in the real numbers.
+
+❯ put in a file xplain.md
+
+● Write(xplain.md)
+  ⎿  Wrote 43 lines to xplain.md
+      1 # AeroMesh, explained simply
+      2
+      3 ## The problem
+      4
+      5 When a big typhoon or earthquake hits, cell towers and fiber line
+        s get knocked out. Rescue teams on the ground lose phone and inte
+        rnet service exactly when they need it most. Think Typhoon Odette
+         hitting the Philippines in 2021, or the 2018 earthquake and tsun
+        ami in Palu, Indonesia. Roads get blocked, people cannot reach th
+        e area for days, and nobody can even see how bad the damage is in
+     … +39 lines (~5 KB) (ctrl+o to expand)
+
+● Saved to /home/s/Documents/AeroMesh/manuscript/xplain.md.

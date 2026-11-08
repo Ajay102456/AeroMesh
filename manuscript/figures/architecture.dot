@@ -1,0 +1,38 @@
+digraph AeroMesh {
+  rankdir=TB;
+  fontname="Helvetica";
+  node [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#eef3f8", color="#2c3e50"];
+  edge [fontname="Helvetica", fontsize=9, color="#2c3e50"];
+
+  subgraph cluster_ground {
+    label="Ground";
+    style=dashed; color="#888888"; fontname="Helvetica"; fontsize=12;
+    RESP [label="Responder teams\n(priority 0)"];
+    MED  [label="Field medical post\n(priority 1)"];
+    CIV  [label="Community hotspots\n(priority 2)"];
+    GS1  [label="Gateway /\nincident command"];
+    GS2  [label="Portable gateway"];
+  }
+
+  subgraph cluster_mesh {
+    label="Aerial mesh";
+    style=dashed; color="#888888"; fontname="Helvetica"; fontsize=12;
+    RU1 [label="Relay UAV 1\n(backbone)"];
+    RU2 [label="Relay UAV 2\n(backbone)"];
+    RU3 [label="Relay UAV 3"];
+    IU1 [label="Inference UAV 1\nearly-exit + UQ"];
+    IU2 [label="Inference UAV 2\nlarge model\n(deferral target)"];
+    GC  [label="Ground control station\n(policy, class weights)", shape=ellipse, fillcolor="#fdf1e3"];
+  }
+
+  RESP -> GS1;
+  MED -> GS2;
+  CIV -> GS2;
+  GS1 -> RU1 [dir=both];
+  GS2 -> RU3 [dir=both];
+  RU1 -> RU2 [dir=both, label="backbone"];
+  RU2 -> RU3 [dir=both];
+  GC -> RU1 [style=dotted, label="policy only"];
+  RESP -> IU1 [style=dashed, label="degraded imagery"];
+  IU1 -> IU2 [label="uncertain tiles,\ndeferred"];
+}

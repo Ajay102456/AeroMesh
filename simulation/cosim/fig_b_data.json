@@ -1,0 +1,2522 @@
+[
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.750211213379936,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9924850165670056,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.994657071466753,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.994657071466753,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9924850165670056,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9827542590801936,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9817900757123912,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9953606805130235,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9953606805130235,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9817900757123912,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.8711271002967867,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.750211213379936,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.750211213379936,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9934311789752254,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9738733690806015,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.750211213379936,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9616069681255321,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9811647780201562,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9811647780201562,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9616069681255321,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.7379448124248666,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.9929866273588374,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.8829653894042094,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.9874092014313935,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.8829653894042094,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.981251941422063,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9822947298807085,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9790015151185545,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9822947298807085,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9790015151185545,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9790015151185545,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.9930013821414525,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.932639251326521,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.989118230174429,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.932639251326521,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.9848590192610731,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9929866273588374,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.8829653894042094,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9874092014313935,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.8829653894042094,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.981251941422063,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9929866273588374,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.8829653894042094,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9874092014313935,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.8829653894042094,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.981251941422063,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9934487053049832,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.8834274673503554,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9878712793775396,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.8834274673503554,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9817140193682089,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.9899831207088889,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.8799618827542611,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.9844056947814452,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.8799618827542611,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.9782484347721144,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.8421407341497581,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.8893867983351281,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.9821257340089096,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.9877031599363532,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.94297072879622,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9564060890476027,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9698154182094955,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9670126796706857,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9670126796706857,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9564060890476027,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9099671639587923,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9324838089720583,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9813028178052534,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9851859697722766,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9630533746891559,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.8421407341497581,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.8893867983351281,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9821257340089096,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9877031599363532,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.94297072879622,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.8421407341497581,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.8893867983351281,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9821257340089096,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9877031599363532,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.94297072879622,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.8432845694061767,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.8905306335915467,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9832695692653279,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9888469951927717,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9441145640526386,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.8404249812651301,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.8876710454505001,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.9804099811242815,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.985987407051725,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.941254975911592,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7641242787112941,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7641242787112941,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7641242787112941,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7641242787112941,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7641242787112941,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.5412102734457819,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.5412102734457819,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.5412102734457819,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.5412102734457819,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.5412102734457819,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.7233772827561157,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.7147506027805556,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.7147506027805556,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.7147506027805556,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.7147506027805556,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.7147506027805556,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7849087961491158,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7849087961491158,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7849087961491158,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7849087961491158,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7849087961491158,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.6117482291000924,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.6117482291000924,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.6117482291000924,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.6117482291000924,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.6117482291000924,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.7147322681459107,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.7127350882311336,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.7127350882311336,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.7127350882311336,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.7127350882311336,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.7127350882311336,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.6541456881053712,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.6541456881053712,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.6541456881053712,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.6541456881053712,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.6541456881053712,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.6183331379196437,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.6183331379196437,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.6183331379196437,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.6183331379196437,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.6183331379196437,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "id",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.715039526594338,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "full",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9257986916677006,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9257986916677006,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.6012598331200819,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9257986916677006,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9257986916677006,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685860501512881,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685860501512881,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685860501512881,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685860501512881,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685860501512881,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5125,
+  "psi_norm": 0.7100809352517986
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 3.5149999999999997,
+  "psi_norm": 0.7105863309352518
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9675314445846744,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9246090642426699,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9246090642426699,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9246090642426699,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9246090642426699,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 0,
+  "ablation": "oracle",
+  "phi_mean": 0.9246090642426699,
+  "psi_mean": 4.94661921708185,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.8708105748229823,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.8708105748229823,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "full",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9171554305665461,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9171554305665461,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.5926165720189275,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.9171554305665461,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.5926165720189275,
+  "psi_mean": 3.913443687274138,
+  "psi_norm": 0.863256652602921
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685809524968493,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.9214545600502507,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685809524968493,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.9214545600502507,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_priority",
+  "phi_mean": 0.9685809524968493,
+  "psi_mean": 4.533349005158766,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.8708105748229823,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.8708105748229823,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 3.07726,
+  "psi_norm": 0.6788050062984791
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.8708105748229823,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.8708105748229823,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9648122753055406,
+  "psi_mean": 3.07988,
+  "psi_norm": 0.6793829454770022
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9746048495776567,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.8806031490950984,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9746048495776567,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.8806031490950984,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9746048495776567,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.9011605425367858,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.8071588420542275,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.9011605425367858,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.8071588420542275,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 1,
+  "ablation": "oracle",
+  "phi_mean": 0.9011605425367858,
+  "psi_mean": 4.924693373886179,
+  "psi_norm": 1.086325665260292
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.9406685384208439,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.8466668379382855,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "full",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7307566152686987,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.5966853080926409,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.5966853080926409,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.7307566152686987,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "phi_mean": 0.5966853080926409,
+  "psi_mean": 2.3426543209876547,
+  "psi_norm": 0.6709087328212336
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9274052414846287,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9204642885843203,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9204642885843203,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.8802788490380301,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_priority",
+  "phi_mean": 0.9204642885843203,
+  "psi_mean": 3.491763046721087,
+  "psi_norm": 1.0
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9406685384208439,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.8466668379382855,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_early_exit",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 2.2065,
+  "psi_norm": 0.631915731530522
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9406685384208439,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.8466668379382855,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "no_uncertainty",
+  "phi_mean": 0.9523166699384739,
+  "psi_mean": 2.21052,
+  "psi_norm": 0.6330670124010194
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9527602641762793,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9644083956939093,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9644083956939093,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.8587585636937209,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "fixed_roles",
+  "phi_mean": 0.9644083956939093,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.9225309497876903,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.9341790813053205,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.9341790813053205,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.828529249305132,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ },
+ {
+  "scenario": "vn",
+  "failLevel": 2,
+  "ablation": "oracle",
+  "phi_mean": 0.9341790813053205,
+  "psi_mean": 4.507815234378542,
+  "psi_norm": 1.2909854345963054
+ }
+]

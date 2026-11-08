@@ -1,0 +1,164 @@
+[
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "priority_class": "responder",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "priority_class": "medical",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 60.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "full",
+  "priority_class": "civilian",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 60.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "priority_class": "responder",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "priority_class": "medical",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 60.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 0,
+  "ablation": "no_self_healing",
+  "priority_class": "civilian",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "priority_class": "responder",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "priority_class": "medical",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 100.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "full",
+  "priority_class": "civilian",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "priority_class": "responder",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "priority_class": "medical",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 100.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 1,
+  "ablation": "no_self_healing",
+  "priority_class": "civilian",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 60.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "priority_class": "responder",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "priority_class": "medical",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "full",
+  "priority_class": "civilian",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "priority_class": "responder",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "priority_class": "medical",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ },
+ {
+  "scenario": "ph",
+  "failLevel": 2,
+  "ablation": "no_self_healing",
+  "priority_class": "civilian",
+  "n_runs": 3,
+  "n_restored": 3,
+  "mean_restore_s": 30.0
+ }
+]
